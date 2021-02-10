@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.red-letter {
+  color: crimson;
+}
+
+.main-head {
+  background-color: #1b1b1b;
+}
+
+nav {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: 10vh;
+}
+
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  /* equal spaces */
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+#logo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+#intro {
+  min-height: 90vh;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.8)),
+      to(transparent)
+    ),
+    url(./img/sitting.JPG);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(./img/sitting.JPG);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex-st;
+  -ms-flex-pack: flex-st;
+  justify-content: flex-st;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.active {
+  background: crimson;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+}
+
+.intro-text {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+.intro-text h2 {
+  font-size: 7rem;
+}
+
+.intro-text h3 {
+  font-size: 4rem;
+}
+
+.intro-text h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.intro-text button {
+  background: transparent;
+  color: crimson;
+  border: 0.2rem solid crimson;
+  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  margin: 5rem 0rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.intro-text button:hover {
+  background: crimson;
+  color: white;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#projects {
+  background: #272727;
+  color: white;
+  width: 100%;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.projects-text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
+}
+
+.projects-text h2 {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+}
+
+.double {
+  -webkit-box-flex: 20;
+  -ms-flex: 20 1 10rem;
+  flex: 20 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.double h2 {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+  text-align: start;
+}
+
+.double img {
+  border: 0.3rem solid transparent;
+  border-radius: 5rem;
+  cursor: pointer;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  padding: 1rem;
+}
+
+.double img:hover {
+  -webkit-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5),
+    0 8px 30px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5), 0 8px 30px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#contact {
+  background: #272727;
+  color: white;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.contact-text {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
+}
+
+.contact-text h2 {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+}
+
+.form {
+  color: black;
+  -webkit-box-flex: 20;
+  -ms-flex: 20 1 10rem;
+  flex: 20 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form form {
+  background: #b3b3b3;
+  padding: 3rem 10rem;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2),
+    0px 10px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2), 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.8;
+  -ms-flex: 0.8 1 10rem;
+  flex: 0.8 1 10rem;
+}
+
+.form .info-div {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form .info-div .row {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 5rem;
+  flex: 1 1 5rem;
+  font-size: 2.5rem;
+}
+
+.form .info-div .row .head {
+  font-weight: 500;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.form .info-div img {
+  width: 65px;
+  height: 65px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 5rem;
+  flex: 1 1 5rem;
+}
+
+.form .form-div {
+  -webkit-box-flex: 2;
+  -ms-flex: 2 1 10rem;
+  flex: 2 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form .form-div input,
+.form .form-div textarea {
+  margin: 2rem;
+}
+
+.form .form-div input:focus,
+.form .form-div textarea:focus {
+  outline: 2px solid black;
+}
+
+.form .form-div textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.form .form-div button {
+  padding: 2rem 4rem;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.form .form-div button:focus {
+  background: #a00f2c;
+}
+
+.form .form-div button,
+.form .form-div label,
+.form .form-div input {
+  font-size: 2.5rem;
+}
+
+.form .form-div label {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+footer {
+  background: #1b1b1b;
+  color: white;
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1120px) {
+  html {
+    font-size: 53%;
+  }
+  .double img {
+    height: 80%;
+    width: 80%;
+  }
+  .double h2 {
+    text-align: center;
+  }
+  .travelly h2 {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .projects-text {
+    display: none;
+  }
+  .contact-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 847px) {
+  .coming-soon {
+    margin-top: 3rem;
+  }
+  #logo {
+    text-align: center;
+  }
+  .active {
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  form {
+    padding: 0 !important;
+  }
+  .margin-top {
+    margin-top: 1rem;
+  }
+  .margin-bottom {
+    margin-bottom: 1rem;
+  }
+  label,
+  input,
+  textarea {
+    font-size: 2rem !important;
+  }
+  .head,
+  .sub-title {
+    font-size: 2rem !important;
+  }
+  .info-div img {
+    height: 40px !important;
+    width: 40px !important;
+  }
+  nav ul {
+    padding: 2rem;
+  }
+  #logo {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .info-div {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

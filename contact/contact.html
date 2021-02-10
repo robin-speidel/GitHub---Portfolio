@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="robots" content="index,follow" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Robin Speidel | Portfolio</title>
+  </head>
+  <body>
+    <header class="main-head">
+      <nav>
+        <h1 id="logo">
+          <span class="red-letter">R</span>obin
+          <span class="red-letter">S</span>peidel
+        </h1>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li><a class="active" href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contact">
+        <div class="contact-text"><h2>Contact</h2></div>
+        <div class="form">
+          <form>
+            <div class="form-div">
+              <label class="margin-top" for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+              <label for="email" Email>E-Mail</label>
+              <input type="email" name="email" id="email" required />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="margin-bottom" type="submit">Send</button>
+            </div>
+            <div class="info-div">
+              <img src="../icons/person.svg" alt="person-icon" />
+              <div class="row">
+                <div class="head">Name</div>
+                <div class="sub-title">Robin Speidel</div>
+              </div>
+              <img src="../icons/location.svg" alt="location-icon" />
+              <div class="row">
+                <div class="head">Address</div>
+                <div class="sub-title">Reutlingen, Germany</div>
+              </div>
+              <img src="../icons/mail.svg" alt="mail-icon" />
+              <div class="row">
+                <div class="head">E-Mail</div>
+                <div class="sub-title">robin-speidel99@web.de</div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <h4>&copy; 2021 Robin Speidel</h4>
+  </footer>
+</html>
